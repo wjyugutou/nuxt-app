@@ -9,6 +9,7 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'ico', href: '/favicon.ico' },
       ],
+      title: 'Nuxt App',
       script: [
         {
           children: `

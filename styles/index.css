@@ -16,6 +16,7 @@ label {
 
 /* stylelint-disable-next-line selector-id-pattern */
 #__nuxt {
+  padding: 0 10px;
   width: 100vw;
   height: 100vh;
 

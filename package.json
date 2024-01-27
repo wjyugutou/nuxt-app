@@ -9,9 +9,13 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.28",
     "@iconify-json/material-symbols": "^1.1.71",
+    "@types/lodash-es": "^4.17.12",
     "@unocss/eslint-config": "^0.58.4",
     "@unocss/nuxt": "^0.58.4",
     "@vueuse/core": "^10.7.2",
@@ -21,6 +25,7 @@
     "eslint": "^8.56.0",
     "nuxt": "^3.9.3",
     "stylelint": "^16.2.0",
+    "typescript": "^5.3.3",
     "unocss": "^0.58.4",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
