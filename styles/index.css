@@ -1,0 +1,64 @@
+@import url('./componentsVariable.css');
+@import url('./variable.css');
+@import url('./transition.css');
+
+html {
+  background: var(--bg-color);
+}
+
+.dark {
+  color-scheme: dark;  
+}
+
+label {
+  user-select: none;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+#__nuxt {
+  width: 100vw;
+  height: 100vh;
+
+  @apply dark:bg-dark dark:text-white;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  color: rgb(107 114 128);
+}
+
+.basic-btn {
+  @apply: w-fit px-5 py-1 rounded-5 bg-green-400 dark:bg-green-600 hover:bg-green-500;
+} 
+
+.btn-mask {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    opacity: 0;
+    content: '';
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.2;
+    }
+  }
+
+  &[active="true"]::after {
+    opacity: 0.2;
+  }
+}

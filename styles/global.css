@@ -1,0 +1,20 @@
+@import url('./componentsVariable.css');
+@import url('./unoVariable.css');
+@import url('./variable.css');
+@import url('./transition.css');
+
+html {
+  background: var(--bg-color);
+}
+
+.dark {
+  color-scheme: dark;  
+}
+
+label {
+  user-select: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
