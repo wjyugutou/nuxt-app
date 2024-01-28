@@ -1,9 +1,5 @@
 <script lang='ts' setup>
 const str = ref('')
-
-watchEffect(() => {
-  console.log(str.value)
-})
 </script>
 
 <template>

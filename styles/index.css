@@ -20,7 +20,7 @@ label {
   width: 100vw;
   height: 100vh;
 
-  @apply dark:bg-dark dark:text-white;
+  @apply dark:text-white;
 }
 
 .hide-scrollbar::-webkit-scrollbar {

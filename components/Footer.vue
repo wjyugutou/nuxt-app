@@ -1,7 +1,3 @@
-<script lang='ts' setup>
-import { isDark, toggleDark } from '@/composables/dark'
-</script>
-
 <template>
   <nav fixed bottom-0 w-full flex items-center justify-center gap-2 text-xl>
     <button class="icon-btn !outline-none">

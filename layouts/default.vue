@@ -1,4 +1,6 @@
 <template>
-  <slot />
+  <CosmicStars monitor-mouse>
+    <slot />
+  </CosmicStars>
   <Footer />
 </template>
