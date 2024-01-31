@@ -1,6 +1,8 @@
 <template>
   <CosmicStars monitor-mouse>
-    <slot />
+    <main class="h-full overflow-auto">
+      <slot />
+    </main>
   </CosmicStars>
   <Footer />
 </template>

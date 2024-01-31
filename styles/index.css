@@ -16,7 +16,8 @@ label {
 
 /* stylelint-disable-next-line selector-id-pattern */
 #__nuxt {
-  padding: 0 10px;
+  overflow: hidden;
+  padding-bottom: 26px;
   width: 100vw;
   height: 100vh;
 
@@ -38,7 +39,7 @@ label {
 }
 
 .basic-btn {
-  @apply: w-fit px-5 py-1 rounded-5 bg-green-400 dark:bg-green-600 hover:bg-green-500;
+  @apply w-fit px-5 py-1 rounded-5 bg-green-400 dark:bg-green-600 hover:bg-green-500;
 } 
 
 .btn-mask {

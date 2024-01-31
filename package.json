@@ -10,17 +10,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.2",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.28",
     "@iconify-json/material-symbols": "^1.1.71",
+    "@types/canvas-confetti": "^1.6.4",
     "@types/lodash-es": "^4.17.12",
     "@unocss/eslint-config": "^0.58.4",
     "@unocss/nuxt": "^0.58.4",
     "@vueuse/core": "^10.7.2",
     "@vueuse/nuxt": "^10.7.2",
-    "@yugutou/eslint-config": "^1.2.3",
+    "@yugutou/eslint-config": "^1.2.5",
     "@yugutou/stylelint-config": "^1.1.7",
     "eslint": "^8.56.0",
     "nuxt": "^3.9.3",

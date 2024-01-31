@@ -61,8 +61,8 @@ function resize() {
 }
 
 function update() {
-  CONSTANT.STAR_SPEED.accelerate_x *= 0.97
-  CONSTANT.STAR_SPEED.accelerate_y *= 0.97
+  CONSTANT.STAR_SPEED.accelerate_x *= 0.955
+  CONSTANT.STAR_SPEED.accelerate_y *= 0.955
 
   CONSTANT.STAR_SPEED.x = (CONSTANT.STAR_SPEED.accelerate_x - CONSTANT.STAR_SPEED.x) * 0.8
   CONSTANT.STAR_SPEED.y = (CONSTANT.STAR_SPEED.accelerate_y - CONSTANT.STAR_SPEED.y) * 0.8
@@ -139,6 +139,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <canvas ref="canvas" class="pointer-events-none fixed bottom-0 left-0 right-0 top-0 select-none" />
+  <canvas ref="canvas" class="pointer-events-none fixed bottom-0 left-0 right-0 top-0 z--1 select-none" />
   <slot />
 </template>

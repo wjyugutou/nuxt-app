@@ -1,3 +1,13 @@
 {
-  "extends": ["@yugutou", "@unocss"]
+  "extends": ["@yugutou", "@unocss"],
+  "rules": {
+    "vue/singleline-html-element-content-newline": [
+      "error",
+      {
+        "ignoreWhenNoAttributes": true,
+        "ignoreWhenEmpty": true,
+        "externalIgnores": ["button", "option"]
+      }
+    ]
+  }
 }

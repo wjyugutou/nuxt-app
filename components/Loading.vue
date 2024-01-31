@@ -22,7 +22,7 @@
   color: var(--color);
   text-shadow: 0 0 0 var(--color),0 calc(var(--s,1)*1.2em) 0 var(--color);
   animation: l15 1s infinite;
-  content:"Loading...";
+  content: "Loading...";
   grid-area: 1/1;
   mask: linear-gradient(90deg,var(--color) 50%,var(--color) 0) 0 50%/2ch 100%;
 }

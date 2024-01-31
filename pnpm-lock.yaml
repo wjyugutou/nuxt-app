@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  canvas-confetti:
+    specifier: ^1.9.2
+    version: 1.9.2
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
@@ -16,6 +19,9 @@ devDependencies:
   '@iconify-json/material-symbols':
     specifier: ^1.1.71
     version: 1.1.71
+  '@types/canvas-confetti':
+    specifier: ^1.6.4
+    version: 1.6.4
   '@types/lodash-es':
     specifier: ^4.17.12
     version: 4.17.12
@@ -32,8 +38,8 @@ devDependencies:
     specifier: ^10.7.2
     version: 10.7.2(nuxt@3.9.3)(vue@3.4.15)
   '@yugutou/eslint-config':
-    specifier: ^1.2.3
-    version: 1.2.3(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^1.2.5
+    version: 1.2.5(eslint@8.56.0)(typescript@5.3.3)
   '@yugutou/stylelint-config':
     specifier: ^1.1.7
     version: 1.1.7(stylelint@16.2.0)
@@ -1837,6 +1843,10 @@ packages:
       minimatch: 9.0.3
     dev: true
 
+  /@types/canvas-confetti@1.6.4:
+    resolution: {integrity: sha512-fNyZ/Fdw/Y92X0vv7B+BD6ysHL4xVU5dJcgzgxLdGbn8O3PezZNIJpml44lKM0nsGur+o/6+NZbZeNTt00U1uA==}
+    dev: true
+
   /@types/eslint-scope@3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
     dependencies:
@@ -2771,8 +2781,8 @@ packages:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
     dev: true
 
-  /@yugutou/eslint-config@1.2.3(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-y2mG/3CDYhccyTWLmi0UAmV5Y3lPZ67E14OYmRQHBoOjTIZJRiF9W0fFPyC3I9pmHWqEIDBaCpDiA1tDJfzZ4A==}
+  /@yugutou/eslint-config@1.2.5(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-RHPuDxeX1VTRtZUrvV9ok9ecJcIDAmXZiuw/GP0X9Ob78goeEDYdAMhPQz15sfLQnIBUyhtdUPjJZLy8gyj86A==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -3191,6 +3201,10 @@ packages:
   /caniuse-lite@1.0.30001580:
     resolution: {integrity: sha512-mtj5ur2FFPZcCEpXFy8ADXbDACuNFXg6mxVDqp7tqooX6l3zwm+d8EPoeOSIFRDvHs8qu7/SLFOGniULkcH2iA==}
     dev: true
+
+  /canvas-confetti@1.9.2:
+    resolution: {integrity: sha512-6Xi7aHHzKwxZsem4mCKoqP6YwUG3HamaHHAlz1hTNQPCqXhARFpSXnkC9TWlahHY5CG6hSL5XexNjxK8irVErg==}
+    dev: false
 
   /chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
