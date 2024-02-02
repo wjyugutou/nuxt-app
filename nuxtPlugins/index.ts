@@ -4,7 +4,9 @@ import path from 'node:path'
 function vitePluginsHRM() {
   return {
     name: 'wujie',
-    handleHotUpdate({ file }: { file: string }) {
+    handleHotUpdate(data: any) {
+      const { file } = data
+
       try {
         if (file.includes('demolist') && file.includes('.vue')) {
           const p = path.resolve(__dirname, '../pages/demolist')
