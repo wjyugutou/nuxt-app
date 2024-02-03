@@ -35,12 +35,26 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+  nitro: {
+    // gzip
+    compressPublicAssets: true,
+  },
   vite: {
     plugins: [vitePluginsHRM()],
     esbuild: {
       drop: ['debugger'],
       pure: ['console.log', 'console.error', 'console.warn', 'console.debug', 'console.trace'],
     },
+    build: {
+      assetsDir: '_nuxt/assets/',
+      emptyOutDir: true,
+      rollupOptions: {
+        output: {
+          assetFileNames: '_nuxt/[ext]/[name]-[hash].[ext]',
+          chunkFileNames: '_nuxt/js/[name]-[hash].js',
+        },
+      },
+    }
   },
   css: [
     '@unocss/reset/tailwind.css',
