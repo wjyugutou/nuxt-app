@@ -2,7 +2,9 @@ import vitePluginsHRM from './nuxtPlugins'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+  },
   app: {
     head: {
       charset: 'utf-8',
@@ -35,11 +37,15 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [vitePluginsHRM()],
+    esbuild: {
+      drop: ['debugger'],
+      pure: ['console.log', 'console.error', 'console.warn', 'console.debug', 'console.trace'],
+    },
   },
   css: [
     '@unocss/reset/tailwind.css',
     'virtual:uno.css',
-    '@/styles/index.css',
+    'assets/styles/index.css',
   ],
   components: [
     {

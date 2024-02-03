@@ -11,17 +11,14 @@ dependencies:
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
-  prismjs:
-    specifier: ^1.29.0
-    version: 1.29.0
 
 devDependencies:
   '@iconify-json/carbon':
     specifier: ^1.1.28
     version: 1.1.28
   '@iconify-json/material-symbols':
-    specifier: ^1.1.71
-    version: 1.1.71
+    specifier: ^1.1.72
+    version: 1.1.72
   '@types/canvas-confetti':
     specifier: ^1.6.4
     version: 1.6.4
@@ -48,16 +45,16 @@ devDependencies:
     version: 1.2.7(eslint@8.56.0)(typescript@5.3.3)
   '@yugutou/stylelint-config':
     specifier: ^1.1.7
-    version: 1.1.7(stylelint@16.2.0)
+    version: 1.1.7(stylelint@16.2.1)
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
   nuxt:
     specifier: ^3.10.0
-    version: 3.10.0(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vite@5.0.12)
+    version: 3.10.0(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vite@5.0.12)
   stylelint:
-    specifier: ^16.2.0
-    version: 16.2.0(typescript@5.3.3)
+    specifier: ^16.2.1
+    version: 16.2.1(typescript@5.3.3)
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -1086,8 +1083,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/material-symbols@1.1.71:
-    resolution: {integrity: sha512-6zW73qQjzxPgQV0zJRyV9RabSJiVVGvDQtcZV4eZyw5Xpt5WZSJ7Gq3J0w+AkxAf5B21jMydJysQV6umrUMnrA==}
+  /@iconify-json/material-symbols@1.1.72:
+    resolution: {integrity: sha512-5IRqdI4HSbdatHBn6NZG+O9M1pJA39IrUhoBD824dXkKKE/3OmS2aU16w1hAhnr7n/euBqclkXAeUG3rDs0l1A==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1333,7 +1330,7 @@ packages:
       '@nuxt/kit': 3.10.0
       '@nuxt/schema': 3.10.0
       execa: 7.2.0
-      nuxt: 3.10.0(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vite@5.0.12)
+      nuxt: 3.10.0(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vite@5.0.12)
       vite: 5.0.12
     transitivePeerDependencies:
       - rollup
@@ -1381,7 +1378,7 @@ packages:
       launch-editor: 2.6.1
       local-pkg: 0.5.0
       magicast: 0.3.3
-      nuxt: 3.10.0(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vite@5.0.12)
+      nuxt: 3.10.0(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vite@5.0.12)
       nypm: 0.3.6
       ohash: 1.1.3
       pacote: 17.0.6
@@ -1484,7 +1481,7 @@ packages:
     resolution: {integrity: sha512-5gc02Pu1HycOVUWJ8aYsWeeXcSTPe8iX8+KIrhyEtEoOSkY0eMBuo0ssljB8wALuEmepv31DlYe5gpiRwkjESA==}
     dev: true
 
-  /@nuxt/vite-builder@3.10.0(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vue@3.4.15):
+  /@nuxt/vite-builder@3.10.0(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vue@3.4.15):
     resolution: {integrity: sha512-PpdcPkvfBzSZVHqxZ/uneTUZq6ufZDzgP36yXxZ/ygRi90szOs5QHWzGFXJ6cCW4D34iqePKjeTXJall3C74LA==}
     engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
@@ -1522,7 +1519,7 @@ packages:
       unplugin: 1.6.0
       vite: 5.0.12
       vite-node: 1.2.2
-      vite-plugin-checker: 0.6.4(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vite@5.0.12)
+      vite-plugin-checker: 0.6.4(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vite@5.0.12)
       vue: 3.4.15(typescript@5.3.3)
       vue-bundle-renderer: 2.0.0
     transitivePeerDependencies:
@@ -2867,7 +2864,7 @@ packages:
       '@vueuse/core': 10.7.2(vue@3.4.15)
       '@vueuse/metadata': 10.7.2
       local-pkg: 0.5.0
-      nuxt: 3.10.0(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vite@5.0.12)
+      nuxt: 3.10.0(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vite@5.0.12)
       vue-demi: 0.14.6(vue@3.4.15)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3014,16 +3011,16 @@ packages:
       - typescript
     dev: true
 
-  /@yugutou/stylelint-config@1.1.7(stylelint@16.2.0):
+  /@yugutou/stylelint-config@1.1.7(stylelint@16.2.1):
     resolution: {integrity: sha512-1YAt/yYLZ0ASfHi5kU8TVEtdHdddM9+M4ypmBNb2SWoXCmFPJR2Wfaxg+8grY2LZVm1N5h/gVFMry3paNS90mA==}
     engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
       stylelint: '>=15.0.0'
     dependencies:
       postcss-html: 1.6.0
-      stylelint: 16.2.0(typescript@5.3.3)
-      stylelint-config-standard: 34.0.0(stylelint@16.2.0)
-      stylelint-order: 6.0.4(stylelint@16.2.0)
+      stylelint: 16.2.1(typescript@5.3.3)
+      stylelint-config-standard: 34.0.0(stylelint@16.2.1)
+      stylelint-order: 6.0.4(stylelint@16.2.1)
     dev: true
 
   /abbrev@1.1.1:
@@ -6271,7 +6268,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /nuxt@3.10.0(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vite@5.0.12):
+  /nuxt@3.10.0(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vite@5.0.12):
     resolution: {integrity: sha512-E9GWyrzTvkoHoJOT847EASEl8KcGDF1twcBgUzDMuNIx+llZ14F+q+XbTjHzYM/o2hqHTer0lLt2RUn5wsBLQQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
     hasBin: true
@@ -6290,7 +6287,7 @@ packages:
       '@nuxt/schema': 3.10.0
       '@nuxt/telemetry': 2.5.3
       '@nuxt/ui-templates': 1.3.1
-      '@nuxt/vite-builder': 3.10.0(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vue@3.4.15)
+      '@nuxt/vite-builder': 3.10.0(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vue@3.4.15)
       '@unhead/dom': 1.8.10
       '@unhead/ssr': 1.8.10
       '@unhead/vue': 1.8.10(vue@3.4.15)
@@ -7020,11 +7017,6 @@ packages:
     engines: {node: ^14.13.1 || >=16.0.0}
     dev: true
 
-  /prismjs@1.29.0:
-    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
-    engines: {node: '>=6'}
-    dev: false
-
   /proc-log@3.0.0:
     resolution: {integrity: sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -7682,37 +7674,37 @@ packages:
       postcss-selector-parser: 6.0.15
     dev: true
 
-  /stylelint-config-recommended@13.0.0(stylelint@16.2.0):
+  /stylelint-config-recommended@13.0.0(stylelint@16.2.1):
     resolution: {integrity: sha512-EH+yRj6h3GAe/fRiyaoO2F9l9Tgg50AOFhaszyfov9v6ayXJ1IkSHwTxd7lB48FmOeSGDPLjatjO11fJpmarkQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 16.2.0(typescript@5.3.3)
+      stylelint: 16.2.1(typescript@5.3.3)
     dev: true
 
-  /stylelint-config-standard@34.0.0(stylelint@16.2.0):
+  /stylelint-config-standard@34.0.0(stylelint@16.2.1):
     resolution: {integrity: sha512-u0VSZnVyW9VSryBG2LSO+OQTjN7zF9XJaAJRX/4EwkmU0R2jYwmBSN10acqZisDitS0CLiEiGjX7+Hrq8TAhfQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 16.2.0(typescript@5.3.3)
-      stylelint-config-recommended: 13.0.0(stylelint@16.2.0)
+      stylelint: 16.2.1(typescript@5.3.3)
+      stylelint-config-recommended: 13.0.0(stylelint@16.2.1)
     dev: true
 
-  /stylelint-order@6.0.4(stylelint@16.2.0):
+  /stylelint-order@6.0.4(stylelint@16.2.1):
     resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
     dependencies:
       postcss: 8.4.33
       postcss-sorting: 8.0.2(postcss@8.4.33)
-      stylelint: 16.2.0(typescript@5.3.3)
+      stylelint: 16.2.1(typescript@5.3.3)
     dev: true
 
-  /stylelint@16.2.0(typescript@5.3.3):
-    resolution: {integrity: sha512-gwqU5AkIb52wrAzzn+359S3NIJDMl02TXLUaV2tzA/L6jUdpTwNt+MCxHlc8+Hb2bUHlYVo92YeSIryF2gJthA==}
+  /stylelint@16.2.1(typescript@5.3.3):
+    resolution: {integrity: sha512-SfIMGFK+4n7XVAyv50CpVfcGYWG4v41y6xG7PqOgQSY8M/PgdK0SQbjWFblxjJZlN9jNq879mB4BCZHJRIJ1hA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
@@ -8347,7 +8339,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-checker@0.6.4(eslint@8.56.0)(stylelint@16.2.0)(typescript@5.3.3)(vite@5.0.12):
+  /vite-plugin-checker@0.6.4(eslint@8.56.0)(stylelint@16.2.1)(typescript@5.3.3)(vite@5.0.12):
     resolution: {integrity: sha512-2zKHH5oxr+ye43nReRbC2fny1nyARwhxdm0uNYp/ERy4YvU9iZpNOsueoi/luXw5gnpqRSvjcEPxXbS153O2wA==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -8389,7 +8381,7 @@ packages:
       npm-run-path: 4.0.1
       semver: 7.5.4
       strip-ansi: 6.0.1
-      stylelint: 16.2.0(typescript@5.3.3)
+      stylelint: 16.2.1(typescript@5.3.3)
       tiny-invariant: 1.3.1
       typescript: 5.3.3
       vite: 5.0.12
