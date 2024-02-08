@@ -14,12 +14,31 @@ label {
   user-select: none;
 }
 
+dialog,
+[popover] {
+  margin: 0;
+}
+
+dialog {
+  width: unset;
+  height: unset;
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 50%);
+}
+
+/* [popover]:-internal-popover-in-top-layer::backdrop {
+  display: none;
+  background-color: red;
+} */
+
+
 /* stylelint-disable-next-line selector-id-pattern */
 #__nuxt {
   overflow: hidden;
-  padding-bottom: 26px;
-  width: 100vw;
-  height: 100vh;
+  padding-bottom: 24px;
+  min-height: 100vh;
 
   @apply dark:text-white;
 }
