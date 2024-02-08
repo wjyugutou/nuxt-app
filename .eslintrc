@@ -9,6 +9,5 @@
         "externalIgnores": ["button", "option"]
       }
     ]
-  },
-  "ignores": ["prism.js", "prism.min.js"]
+  }
 }

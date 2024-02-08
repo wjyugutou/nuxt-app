@@ -1,5 +1,6 @@
 import vitePluginsHRM from './nuxtPlugins'
 
+// const imageApi = 'https://movies-proxy.vercel.app'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {
@@ -43,7 +44,7 @@ export default defineNuxtConfig({
     plugins: [vitePluginsHRM()],
     esbuild: {
       drop: ['debugger'],
-      pure: ['console.log', 'console.error', 'console.warn', 'console.debug', 'console.trace'],
+      pure: ['console.log', 'console.debug', 'console.trace'],
     },
     build: {
       assetsDir: '_nuxt/assets/',
@@ -54,7 +55,7 @@ export default defineNuxtConfig({
           chunkFileNames: '_nuxt/js/[name]-[hash].js',
         },
       },
-    }
+    },
   },
   css: [
     '@unocss/reset/tailwind.css',
@@ -82,7 +83,24 @@ export default defineNuxtConfig({
     // // 跳转旧的URL
     // '/old-page': { redirect: '/new-page' }
   },
-  modules: [
-    '@unocss/nuxt', '@vueuse/nuxt',
-  ],
+  modules: ['@unocss/nuxt', '@vueuse/nuxt', '@nuxt/image'],
+  experimental: {
+    viewTransition: true,
+  },
+  // image: {
+  //   provider: 'proxy',
+  //   providers: {
+  //     proxy: {
+  //       provider: 'ipx',
+  //       options: {
+  //         baseURL: `${imageApi}/ipx`,
+  //       },
+  //     },
+  //   },
+  // },
+  // runtimeConfig: {
+  //   public: {
+  //     imageApi,
+  //   },
+  // },
 })
