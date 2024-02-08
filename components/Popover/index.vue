@@ -111,20 +111,20 @@ onMounted(() => {
   <slot />
   <ClientOnly>
     <Teleport :to="popoverContainerSelector">
-      <Transition name="popover">
-        <div
-          v-show="modelValue"
-          ref="floating" popover="manual"
-          :style="floatingStyle" class="popover-content"
-        >
-          <span ref="floatingArrow" class="popover-arrow" :style="arrowStyle" />
+      <div
+        ref="floating" popover="manual"
+        :style="floatingStyle" class="popover-content" :class="{
+          'popover-enter-active': modelValue,
+          'popover-leave-active': !modelValue,
+        }"
+      >
+        <span ref="floatingArrow" class="popover-arrow" :style="arrowStyle" />
 
-          <template v-if="content">
-            {{ content }}
-          </template>
-          <slot v-else name="content" />
-        </div>
-      </Transition>
+        <template v-if="content">
+          {{ content }}
+        </template>
+        <slot v-else name="content" />
+      </div>
     </Teleport>
   </ClientOnly>
 </template>
@@ -135,6 +135,7 @@ onMounted(() => {
   border-radius: 8px;
   padding: 4px;
   background-color: color-mix(in lch, var(--bg-color), gray);
+  animation: .5s ease-out forwards;
 
   & .popover-arrow {
     display: none;
@@ -148,6 +149,7 @@ onMounted(() => {
     top: var(--arrow-top);
     right: var(--arrow-right);
     bottom: var(--arrow-bottom);
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     left: var(--arrow-left);
     width: var(--arrow-width);
     height: var(--arrow-height);
@@ -158,31 +160,36 @@ onMounted(() => {
   }
 }
 
-[popover] {
-  margin: 0;
-}
-
-[popover]:-internal-popover-in-top-layer::backdrop {
-  /* display: none; */
-
-  /* background-color: red; */
-}
-
 .popover-enter-active {
-  transition: opacity 0.5s linear;
+  animation-name:  popover-enter-active;
 }
 
 .popover-leave-active {
-  transition: opacity 0.5s linear;
+  animation-name:  popover-leave-active;
 }
 
-.popover-enter-from,
-.popover-leave-to {
-  opacity: 0;
+@keyframes popover-enter-active {
+  0% {
+    display: none;
+    opacity: 0;
+
+  }
+
+  100%{
+    display: block;
+    opacity: 1;
+  }
 }
 
-.popover-enter-to,
-.popover-leave-from {
-  opacity: 1;
+@keyframes popover-leave-active {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
 }
 </style>
