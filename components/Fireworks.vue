@@ -23,3 +23,6 @@ watchEffect(() => {
   props.show && start()
 })
 </script>
+<template>
+
+</template>

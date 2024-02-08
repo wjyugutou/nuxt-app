@@ -6,25 +6,24 @@ const props = withDefaults(defineProps<{
   code: string
   title?: string
   isCollapse?: boolean
-}>(), { lang: 'typescript' })
+}>(), { lang: 'typescript', isCollapse: true })
 
 // 手动决定颜色显示时机 设为true
 window.Prism.manual = true
 
 // fix plugin inline-color 无效bug
-// @ts-ignore color
+// @ts-expect-error color
 Prism.languages.css.color = /(#[a-zA-Z0-9]{3,6})|(rgba?)|([a-zA-Z]{3,6})|(\#000 0\%) | transparent/
 // /(#[a-zA-Z0-9]{3,6})|(rgba?)|([a-zA-Z]{3,6})/
 
 const languagelist = [
-  'javascript', 'typescript', 'css', 'plaintext', 'html', 'markdown', 'jsx', 'tsx', 'xml', 'json'
+  'javascript', 'typescript', 'css', 'plaintext', 'html', 'markdown', 'jsx', 'tsx', 'xml', 'json',
 ] as const
 
 const [collapse, setCollapse] = useToggle(!!props.isCollapse)
 const preEle = ref()
 
 watch(() => props.code, (value, old) => {
-  
   preEle.value && window.Prism.highlightElement(preEle.value)
 }, { immediate: true })
 
@@ -32,14 +31,14 @@ function copyCode() {
   navigator.clipboard.writeText(props.code)
 }
 
-onMounted(()=> {
+onMounted(() => {
   window.Prism.highlightElement(preEle.value)
 })
 </script>
 
 <template>
   <div :class="`language-${lang}`">
-    <pre  class="line-numbers match-braces" data-line :class="`language-${lang}`" :style="{ height: collapse ? 0 : undefined }">
+    <pre class="line-numbers match-braces" data-line :class="`language-${lang}`" :style="{ height: collapse ? '30px' : undefined }">
       <div class="toolbar" :class="collapse ? 'important-border-b-none' : ''">
         <ArrowIcon class="absolute left-0 important-text-24px" duration="0.3s" :rotate="collapse" @click="setCollapse()" />
         <p>{{ title }}</p>

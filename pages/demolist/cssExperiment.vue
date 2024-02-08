@@ -56,6 +56,56 @@ const attrCode = `.text-fallen {
         lang="css" :code="attrCode"
       />
     </div>
+
+    <div class="p-5">
+      <h1 class="font-bold">
+        <a class="" target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/content-visibility">content-visibility</a>
+      </h1>
+      <p>content-visibility css实现虚拟列表</p>
+
+      <CodeView
+        class="m-t-2"
+        title="css attr()函数1"
+        lang="css" code="content-visibility: auto;"
+      />
+    </div>
+
+    <div class="p-5">
+      <p>css counter</p>
+      <p>好像只能用在 ::after/::before/::marker等为元素的content属性中，跟attr()函数一样</p>
+      <ol>
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+      </ol>
+      <CodeView
+        lang="css" title="css counter" code="ol {
+  counter-reset: markerCounter 1 customCounter 2;
+
+  & li {
+    background-color: counter(customCounter);
+    counter-increment: customCounter markerCounter 1;
+
+    &::marker {
+      color: red;
+      content: counters(markerCounter, '-') '-'';
+    }
+
+    &::after {
+      color: counter(customCounter);
+      content: ' --' counter(customCounter) '--1 ';
+    }
+  }
+}
+
+@counter-style customCounter {
+  system: cyclic ;
+  symbols: #000 #fff red ;
+}"
+      />
+    </div>
   </div>
 </template>
 
@@ -66,5 +116,29 @@ const attrCode = `.text-fallen {
   height: 100px;
   background-repeat: no-repeat;
   background-size: 100px;
+}
+
+ol {
+  counter-reset: markerCounter 1 customCounter 2;
+
+  & li {
+    background-color: counter(customCounter);
+    counter-increment: customCounter markerCounter 1;
+
+    &::marker {
+      color: red;
+      content: counters(markerCounter, '-') "-";
+    }
+
+    &::after {
+      color: counter(customCounter);
+      content: ' --' counter(customCounter) "--1 ";
+    }
+  }
+}
+
+@counter-style customCounter {
+  system: cyclic ;
+  symbols: #000 #fff red ;
 }
 </style>

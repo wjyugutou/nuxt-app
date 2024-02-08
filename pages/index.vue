@@ -11,8 +11,6 @@ useSeoMeta({
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image',
 })
-
-const str = ref('')
 </script>
 
 <template>
@@ -22,7 +20,7 @@ const str = ref('')
         多参数动态路由
       </NuxtLink>
     </button>
-    <div>
+    <div class="flex gap-2">
       <button v-for="name in demolist" :key="name" class="basic-btn">
         <NuxtLink :to="`/demolist/${name}`">
           {{ name }}
