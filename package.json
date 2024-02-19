@@ -13,7 +13,8 @@
   "dependencies": {
     "@floating-ui/vue": "^1.0.6",
     "canvas-confetti": "^1.9.2",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "wavesurfer.js": "^7.7.3"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.28",

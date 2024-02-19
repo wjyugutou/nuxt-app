@@ -15,17 +15,17 @@ useSeoMeta({
 
 <template>
   <div>
-    <button class="basic-btn">
+    <div class="basic-btn">
       <NuxtLink to="/1/鱼骨头/21">
         多参数动态路由
       </NuxtLink>
-    </button>
-    <div class="flex gap-2">
-      <button v-for="name in demolist" :key="name" class="basic-btn">
+    </div>
+    <div class="m-y-2 flex gap-2">
+      <div v-for="name in demolist" :key="name" class="basic-btn">
         <NuxtLink :to="`/demolist/${name}`">
           {{ name }}
         </NuxtLink>
-      </button>
+      </div>
     </div>
   </div>
 </template>
