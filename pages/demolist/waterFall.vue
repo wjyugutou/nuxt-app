@@ -1,5 +1,5 @@
 <script lang='ts' setup>
-import { random } from 'lodash-es';
+import { random } from 'lodash-es'
 
 const codeStr = `
 \<script lang='ts' setup generic="T"\>
@@ -42,25 +42,26 @@ const slots = defineSlots\<{
 `
 
 const list = ref<{
-    color: string;
-    row: number;
-    col: number;
+  color: string
+  row: number
+  col: number
 }[]>([])
 
-function  randomData() {
-  const a = Array.from({length: random(100, 200)}, ()=> ({color: useRandomColor(), col: random(1, 3), row: random(4, 8)}))
+function randomData() {
+  const a = Array.from({ length: random(100, 200) }, () => ({ color: useRandomColor(), col: random(1, 3), row: random(4, 8) }))
   list.value = a
 }
 
 randomData()
-
 </script>
 
 <template>
-<div>
-  <CssWaterFall #default="data" :list="list">
-    <div class="w-full h-full" :style="{backgroundColor: useRandomColor()}">sdsad</div>
-  </CssWaterFall>
-  <CodeView lang="xml" title="css实现瀑布流" :code="codeStr" />
-</div> 
+  <div>
+    <CssWaterFall :list="list">
+      <div class="h-full w-full" :style="{ backgroundColor: useRandomColor() }">
+        sdsad
+      </div>
+    </CssWaterFall>
+    <CodeView lang="xml" title="css实现瀑布流" :code="codeStr" />
+  </div>
 </template>

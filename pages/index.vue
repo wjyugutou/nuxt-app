@@ -11,6 +11,10 @@ useSeoMeta({
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image',
 })
+
+// useNuxtData
+// useNuxtDevTools
+// tryUseNuxtApp
 </script>
 
 <template>
