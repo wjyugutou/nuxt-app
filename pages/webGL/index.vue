@@ -1,5 +1,4 @@
 <script lang='ts' setup>
-const router = useRouter()
 const route = useRoute()
 
 const pathMap: Record<string, { default: any }> = import.meta.glob('./components/*.vue', { eager: true })
@@ -9,7 +8,7 @@ const nameMap = Object.values(pathMap).reduce((pre, cur) => {
 }, {} as Record<string, any>)
 
 if (!route.query.type) {
-  router.push({
+  navigateTo({
     query: {
       type: Reflect.ownKeys(nameMap)[0] as string,
     },
@@ -19,7 +18,7 @@ if (!route.query.type) {
 const component = computed(() => nameMap[route.query.type as string])
 
 function handleClick(com: any) {
-  router.push({
+  navigateTo({
     query: {
       type: com.__name,
     },

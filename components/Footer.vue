@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import { isDark, toggleDark } from '@/composables/dark'
 
-const router = useRouter()
 </script>
 
 <template>
   <ClientOnly>
     <nav class="footer h-full flex items-center justify-center gap-2 text-xl">
-      <button class="icon-btn !outline-none" @click="router.push('/')">
+      <button class="icon-btn !outline-none" @click="navigateTo('/')">
         <div class="i-carbon-home" />
       </button>
-      <button class="icon-btn !outline-none" @click="router.push('/blog')">
+      <button class="icon-btn !outline-none" @click="navigateTo('/blog')">
         <div class="i-carbon-doc" />
       </button>
       <button class="icon-btn !outline-none" @click="toggleDark">
