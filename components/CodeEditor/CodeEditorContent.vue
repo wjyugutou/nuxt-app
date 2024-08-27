@@ -36,6 +36,7 @@ const html = computed(() => highlighter.highlight(code.value, { lang: props.lang
 <style>
 .editor-content {
     position: relative;
+    cursor: text;
 
     & .shiki {
       padding: 14px 16px;
@@ -51,6 +52,10 @@ const html = computed(() => highlighter.highlight(code.value, { lang: props.lang
       resize: none;
       inset: 0;
       caret-color: #fff;
+    }
+
+    & .code-textarea {
+      cursor: text;
     }
   }
 </style>

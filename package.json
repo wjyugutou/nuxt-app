@@ -30,7 +30,9 @@
     "@unocss/nuxt": "^0.61.6",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
+    "@yugutou/stylelint-config": "^1.1.7",
     "eslint": "^9.8.0",
+    "stylelint": "^16.8.2",
     "unocss": "^0.61.6"
   }
 }

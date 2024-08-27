@@ -50,24 +50,28 @@ button, a {
 </script>
 
 <template>
-  <div py-2>
-    <InputAnimate v-model="name" placeholder="Input&nbsp;Your&nbsp;Name" />
-    <NuxtLink :to="`/hi/${name}`">
-      前往
-    </NuxtLink>
-  </div>
+  <div class=" pl-80">
+    <DemochallengeList class="w-75 fixed top-0 left-4 max-h-100vh overflow-auto" :list="demochallengeList" />
 
-  <div class="b b-gray-400 m-y-10 p-2">
-    <NuxtLink to="/webGL">
-      webGL
-    </NuxtLink>
+    <div class="w-full">
+      <div py-2>
+        <InputAnimate v-model="name" placeholder="Input&nbsp;Your&nbsp;Name" />
+        <NuxtLink :to="`/hi/${name}`">
+          前往
+        </NuxtLink>
+      </div>
 
-    <NuxtLink to="/webGPU">
-      webGPU
-    </NuxtLink>
-  </div>
-  <DemochallengeList :list="demochallengeList" />
-  <div class="p-y-10">
-    <CodeEditor v-model="code" lang="vue" />
+      <div class="b b-gray-400 m-y-10 p-2">
+        <NuxtLink to="/webGL">
+          webGL
+        </NuxtLink>
+
+        <NuxtLink to="/webGPU">
+          webGPU
+        </NuxtLink>
+      </div>
+
+      <CodeEditor v-model="code" lang="vue" />
+    </div>
   </div>
 </template>
