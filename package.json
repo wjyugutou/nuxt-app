@@ -1,13 +1,14 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@floating-ui/vue": "^1.1.2",
